@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box; }
+
+#component-container {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.privacy-policy {
+  font-family: 'Arial',sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333333; }
+  .privacy-policy a, .privacy-policy a:active, .privacy-policy a:visited, .privacy-policy a:focus {
+    color: #0065A1; }
+  .privacy-policy a:hover {
+    color: #D51968; }
+  .privacy-policy a:active, .privacy-policy a:hover {
+    outline: 0; }
+  .privacy-policy ul, .privacy-policy li {
+    margin: 0;
+    padding: 0; }
+  .privacy-policy h1, .privacy-policy h2, .privacy-policy h3, .privacy-policy h4, .privacy-policy h5 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1.1;
+    color: inherit; }
+  .privacy-policy h1 {
+    font-size: 40px;
+    letter-spacing: -0.032em;
+    font-weight: bold; }
+  .privacy-policy h2 {
+    font-size: 33px;
+    letter-spacing: -0.022em;
+    font-weight: normal; }
+  .privacy-policy h3 {
+    font-size: 25px;
+    letter-spacing: -0.022em;
+    font-weight: normal; }
+  .privacy-policy h4 {
+    font-size: 18px;
+    font-weight: normal; }
+  .privacy-policy main {
+    display: flex;
+    flex-wrap: wrap; }
+    .privacy-policy main .side-nav {
+      width: 30%; }
+      @media screen and (max-width: 760px) {
+        .privacy-policy main .side-nav {
+          width: 100%; } }
+    .privacy-policy main .articles {
+      flex: 1; }
+      @media screen and (max-width: 760px) {
+        .privacy-policy main .articles {
+          width: 100%;
+          flex: initial; } }
+  .privacy-policy .tabbed-nav {
+    margin-bottom: 50px; }
+    @media screen and (max-width: 760px) {
+      .privacy-policy .tabbed-nav {
+        text-align: center; } }
+    .privacy-policy .tabbed-nav::before {
+      display: table;
+      content: " "; }
+    .privacy-policy .tabbed-nav::after {
+      display: table;
+      content: " ";
+      clear: both; }
+    .privacy-policy .tabbed-nav ul {
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+      border-bottom: 2px solid #eee; }
+      .privacy-policy .tabbed-nav ul::before {
+        display: table;
+        content: " "; }
+      .privacy-policy .tabbed-nav ul::after {
+        display: table;
+        content: " ";
+        clear: both; }
+      .privacy-policy .tabbed-nav ul > li {
+        margin-bottom: -1px;
+        position: relative;
+        display: inline-block; }
+        .privacy-policy .tabbed-nav ul > li.active > a {
+          cursor: default;
+          border: none;
+          color: #0065A1;
+          background: transparent; }
+          .privacy-policy .tabbed-nav ul > li.active > a::after {
+            transform: scale(1); }
+        .privacy-policy .tabbed-nav ul > li:hover {
+          cursor: pointer; }
+          .privacy-policy .tabbed-nav ul > li:hover > a::after {
+            transform: scale(1); }
+        .privacy-policy .tabbed-nav ul > li > a {
+          text-decoration: none;
+          position: relative;
+          display: block;
+          padding: 10px 15px;
+          margin-right: 2px;
+          line-height: 1.42857143;
+          border-radius: 4px 4px 0 0;
+          background-color: transparent;
+          border: none;
+          color: #666;
+          font-weight: normal; }
+          .privacy-policy .tabbed-nav ul > li > a:hover {
+            border: none;
+            color: #0065A1;
+            background: transparent;
+            text-decoration: none; }
+          .privacy-policy .tabbed-nav ul > li > a::after {
+            content: "";
+            background: #0065A1;
+            height: 2px;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            bottom: -1px;
+            transition: all 250ms ease 0s;
+            transform: scale(0); }
+  .privacy-policy .side-nav {
+    margin-bottom: 50px; }
+    .privacy-policy .side-nav ul {
+      list-style: disc;
+      color: #0065A1;
+      padding-left: 15px; }
+  .privacy-policy .articles {
+    margin-bottom: 50px; }
+    .privacy-policy .articles .article {
+      margin-bottom: 50px; }
+      .privacy-policy .articles .article:last-child {
+        margin-bottom: 0; }
+      .privacy-policy .articles .article p {
+        margin: 0 0 10px; }
