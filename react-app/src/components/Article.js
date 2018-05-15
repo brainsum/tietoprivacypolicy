@@ -18,7 +18,7 @@ class Article extends Component {
   render() {
     return (
       <div className="article">
-        <a name={this.props.data.hash}> </a>
+        <a className="anchor" name={this.props.data.hash}> </a>
         <h3>{this.props.data.title}</h3>
         <div className="intro">
           {this.props.data.intro}

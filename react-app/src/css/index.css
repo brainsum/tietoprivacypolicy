@@ -131,6 +131,11 @@
     margin-bottom: 50px; }
     .privacy-policy-app .articles .article {
       margin-bottom: 50px; }
+      .privacy-policy-app .articles .article .anchor {
+        display: block;
+        position: relative;
+        top: -90px;
+        visibility: hidden; }
       .privacy-policy-app .articles .article:last-child {
         margin-bottom: 0; }
       .privacy-policy-app .articles .article p {
