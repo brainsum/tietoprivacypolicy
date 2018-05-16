@@ -5,94 +5,94 @@
   max-width: 1000px;
   margin: 0 auto; }
 
-.privacy-policy-app {
+.privacy-notice-app {
   font-family: 'Arial',sans-serif;
   font-size: 14px;
   line-height: 1.8;
   color: #333333; }
-  .privacy-policy-app a, .privacy-policy-app a:active, .privacy-policy-app a:visited, .privacy-policy-app a:focus {
+  .privacy-notice-app a, .privacy-notice-app a:active, .privacy-notice-app a:visited, .privacy-notice-app a:focus {
     color: #0065A1; }
-  .privacy-policy-app a:hover {
+  .privacy-notice-app a:hover {
     color: #D51968; }
-  .privacy-policy-app a:active, .privacy-policy-app a:hover {
+  .privacy-notice-app a:active, .privacy-notice-app a:hover {
     outline: 0; }
-  .privacy-policy-app ul, .privacy-policy-app li {
+  .privacy-notice-app ul, .privacy-notice-app li {
     margin: 0;
     padding: 0; }
-  .privacy-policy-app h1, .privacy-policy-app h2, .privacy-policy-app h3, .privacy-policy-app h4, .privacy-policy-app h5 {
+  .privacy-notice-app h1, .privacy-notice-app h2, .privacy-notice-app h3, .privacy-notice-app h4, .privacy-notice-app h5 {
     margin: 0 0 10px 0;
     padding: 0;
     line-height: 1.1;
     color: inherit; }
-  .privacy-policy-app h1 {
+  .privacy-notice-app h1 {
     font-size: 40px;
     letter-spacing: -0.032em;
     font-weight: bold; }
-  .privacy-policy-app h2 {
+  .privacy-notice-app h2 {
     font-size: 33px;
     letter-spacing: -0.022em;
     font-weight: normal; }
-  .privacy-policy-app h3 {
+  .privacy-notice-app h3 {
     font-size: 25px;
     letter-spacing: -0.022em;
     font-weight: normal; }
-  .privacy-policy-app h4 {
+  .privacy-notice-app h4 {
     font-size: 18px;
     font-weight: normal; }
-  .privacy-policy-app main {
+  .privacy-notice-app main {
     display: flex;
     flex-wrap: wrap; }
-    .privacy-policy-app main .side-nav {
+    .privacy-notice-app main .side-nav {
       width: 30%; }
       @media screen and (max-width: 760px) {
-        .privacy-policy-app main .side-nav {
+        .privacy-notice-app main .side-nav {
           width: 100%; } }
-    .privacy-policy-app main .articles {
+    .privacy-notice-app main .articles {
       flex: 1; }
       @media screen and (max-width: 760px) {
-        .privacy-policy-app main .articles {
+        .privacy-notice-app main .articles {
           width: 100%;
           flex: initial; } }
-  .privacy-policy-app .tabbed-nav {
+  .privacy-notice-app .tabbed-nav {
     margin-bottom: 50px; }
     @media screen and (max-width: 760px) {
-      .privacy-policy-app .tabbed-nav {
+      .privacy-notice-app .tabbed-nav {
         text-align: center; } }
-    .privacy-policy-app .tabbed-nav::before {
+    .privacy-notice-app .tabbed-nav::before {
       display: table;
       content: " "; }
-    .privacy-policy-app .tabbed-nav::after {
+    .privacy-notice-app .tabbed-nav::after {
       display: table;
       content: " ";
       clear: both; }
-    .privacy-policy-app .tabbed-nav ul {
+    .privacy-notice-app .tabbed-nav ul {
       padding-left: 0;
       margin: 0;
       list-style: none;
       border-bottom: 2px solid #eee; }
-      .privacy-policy-app .tabbed-nav ul::before {
+      .privacy-notice-app .tabbed-nav ul::before {
         display: table;
         content: " "; }
-      .privacy-policy-app .tabbed-nav ul::after {
+      .privacy-notice-app .tabbed-nav ul::after {
         display: table;
         content: " ";
         clear: both; }
-      .privacy-policy-app .tabbed-nav ul > li {
+      .privacy-notice-app .tabbed-nav ul > li {
         margin-bottom: -1px;
         position: relative;
         display: inline-block; }
-        .privacy-policy-app .tabbed-nav ul > li.active > a {
+        .privacy-notice-app .tabbed-nav ul > li.active > a {
           cursor: default;
           border: none;
           color: #0065A1;
           background: transparent; }
-          .privacy-policy-app .tabbed-nav ul > li.active > a::after {
+          .privacy-notice-app .tabbed-nav ul > li.active > a::after {
             transform: scale(1); }
-        .privacy-policy-app .tabbed-nav ul > li:hover {
+        .privacy-notice-app .tabbed-nav ul > li:hover {
           cursor: pointer; }
-          .privacy-policy-app .tabbed-nav ul > li:hover > a::after {
+          .privacy-notice-app .tabbed-nav ul > li:hover > a::after {
             transform: scale(1); }
-        .privacy-policy-app .tabbed-nav ul > li > a {
+        .privacy-notice-app .tabbed-nav ul > li > a {
           text-decoration: none;
           position: relative;
           display: block;
@@ -104,12 +104,12 @@
           border: none;
           color: #666;
           font-weight: normal; }
-          .privacy-policy-app .tabbed-nav ul > li > a:hover {
+          .privacy-notice-app .tabbed-nav ul > li > a:hover {
             border: none;
             color: #0065A1;
             background: transparent;
             text-decoration: none; }
-          .privacy-policy-app .tabbed-nav ul > li > a::after {
+          .privacy-notice-app .tabbed-nav ul > li > a::after {
             content: "";
             background: #0065A1;
             height: 2px;
@@ -119,31 +119,37 @@
             bottom: -1px;
             transition: all 250ms ease 0s;
             transform: scale(0); }
-  .privacy-policy-app .side-nav {
+  .privacy-notice-app .side-nav {
     margin-bottom: 50px; }
-    .privacy-policy-app .side-nav ul {
+    .privacy-notice-app .side-nav ul {
       list-style: disc;
       color: #0065A1;
       padding-left: 15px; }
-      .privacy-policy-app .side-nav ul li a {
+      .privacy-notice-app .side-nav ul li a {
         cursor: pointer; }
-  .privacy-policy-app .articles {
+  .privacy-notice-app .articles {
     margin-bottom: 50px; }
-    .privacy-policy-app .articles .article {
+    .privacy-notice-app .articles .article {
       margin-bottom: 50px; }
-      .privacy-policy-app .articles .article .anchor {
+      .privacy-notice-app .articles .article .anchor {
         display: block;
         position: relative;
         top: -90px;
         visibility: hidden; }
-      .privacy-policy-app .articles .article:last-child {
+      .privacy-notice-app .articles .article:last-child {
         margin-bottom: 0; }
-      .privacy-policy-app .articles .article p {
+      .privacy-notice-app .articles .article p {
         margin: 0 0 10px; }
-      .privacy-policy-app .articles .article .intro {
+      .privacy-notice-app .articles .article .intro {
         margin: 0 0 10px; }
-        .privacy-policy-app .articles .article .intro .more a {
-          cursor: pointer; }
-      .privacy-policy-app .articles .article .content {
+      .privacy-notice-app .articles .article .content {
         overflow: hidden;
-        transition: height .25s ease-out; }
+        transition: height .25s ease-out;
+        background-color: #FAFAFA;
+        will-change: height; }
+        .privacy-notice-app .articles .article .content.expanded {
+          margin: 0 0 10px; }
+        .privacy-notice-app .articles .article .content > div {
+          padding: 20px 40px; }
+      .privacy-notice-app .articles .article .more a {
+        cursor: pointer; }

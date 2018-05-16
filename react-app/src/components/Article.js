@@ -6,8 +6,7 @@ class Article extends Component {
     super(props);
     this.contentRef = React.createRef();
     this.state = {
-      expanded: true,
-      height: 0
+      expanded: false
     }
   }
 
@@ -22,11 +21,11 @@ class Article extends Component {
         <h3>{this.props.data.title}</h3>
         <div className="intro">
           {this.props.data.intro}
-          <div className="more"><a onClick={this.handleMoreOpen.bind(this)}>› More</a></div>
         </div>
         <div ref={this.contentRef} className={'content' + ((this.state.expanded) ? ' expanded' : '')} style={{height:'0px'}}>
-          {this.props.data.content}
+          <div>{this.props.data.content}</div>
         </div>
+        <div className="more"><a onClick={this.handleMoreOpen.bind(this)}>› More</a></div>
       </div>
     );
   }
@@ -34,13 +33,15 @@ class Article extends Component {
   handleMoreOpen(event) {
 
     if(this.contentRef.current.style.height === '0px') {
+      this.setState({expanded: true});
       this.contentRef.current.style.height = this.contentRef.current.scrollHeight + 'px';
     } else {
+      this.setState({expanded: false});
       this.contentRef.current.style.height ='0px';
     }
     
     // Changing link text
-    event.target.innerText =(event.target.innerText === '› More') ? '› Close' : '› More' ;
+    event.target.innerText =(event.target.innerText === '› More') ? '⨯ Less' : '› More' ;
   }
 }
 

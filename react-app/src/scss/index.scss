@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 
-.privacy-policy-app {
+.privacy-notice-app {
 
   // Variables
   $color-font: #333333;
@@ -211,15 +211,24 @@
       }
       .intro {
         margin: 0 0 10px;
-        .more {
-          a {
-            cursor: pointer;
-          }
-        }
       }
       .content {
         overflow: hidden;
         transition: height .25s ease-out;
+        background-color: #FAFAFA;
+        will-change: height;
+        &.expanded {
+          margin: 0 0 10px;
+        }
+        > div {
+          padding: 20px 40px;
+          
+        }
+      }
+      .more {
+        a {
+          cursor: pointer;
+        }
       }
     }
   }

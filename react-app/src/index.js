@@ -41,8 +41,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="privacy-policy-app">
-        <h1>Privacy policy</h1>
+      <div className="privacy-notice-app">
+        <h1>Privacy notice</h1>
         <TabbedNav categories={this.state.categories}
           currentCategory={this.state.currentCategory}
           setCurrentCategory={this.setCurrentCategory.bind(this)}>
