@@ -19,13 +19,15 @@ class Article extends Component {
       <div className="article">
         <a className="anchor" name={this.props.data.hash}> </a>
         <h3>{this.props.data.title}</h3>
-        <div className="intro">
-          {this.props.data.intro}
-        </div>
-        <div ref={this.contentRef} className={'content' + ((this.state.expanded) ? ' expanded' : '')} style={{height:'0px'}}>
-          <div>{this.props.data.content}</div>
-        </div>
-        <div className="more"><a onClick={this.handleMoreOpen.bind(this)}>› More</a></div>
+        <div className="intro" dangerouslySetInnerHTML={{__html: this.props.data.intro}} />
+        {this.props.data.content !== "" &&
+          <React.Fragment>
+            <div ref={this.contentRef} className={'content' + ((this.state.expanded) ? ' expanded' : '')} style={{height:'0px'}}>
+              <div dangerouslySetInnerHTML={{__html: this.props.data.content}} />
+            </div>
+            <div className="more"><a onClick={this.handleMoreOpen.bind(this)}>More</a></div>
+          </React.Fragment>
+        }
       </div>
     );
   }
@@ -41,7 +43,7 @@ class Article extends Component {
     }
     
     // Changing link text
-    event.target.innerText =(event.target.innerText === '› More') ? '⨯ Less' : '› More' ;
+    event.target.innerText =(event.target.innerText === 'More') ? 'Less' : 'More' ;
   }
 }
 

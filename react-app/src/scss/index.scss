@@ -10,9 +10,10 @@
 .privacy-notice-app {
 
   // Variables
-  $color-font: #333333;
-  $color-link: #0065A1;
-  $color-link-hover: #D51968;
+  $color-font: #000000;
+  $color-link: #000000;
+  $color-link-hover: #000000;
+  $color-gray: #F0F0F0;
 
   // Mixins
   @mixin breakpoint-max($width) {
@@ -41,10 +42,6 @@
   a:active, a:hover {
     outline: 0;
   }
-  ul,li {
-    margin: 0;
-    padding: 0;
-  }
   h1,h2,h3,h4,h5 {
     margin: 0 0 10px 0;
     padding: 0;
@@ -71,6 +68,10 @@
     font-weight:normal;
   }
 
+  > h1 {
+    margin-bottom: 30px;
+  }
+
   // Main styles
   main {
     display: flex;
@@ -92,7 +93,7 @@
 
   // Component
   .tabbed-nav {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     @include breakpoint-max(760px) {
       text-align: center;
     }
@@ -106,7 +107,7 @@
       clear: both;
     }
     ul {
-      padding-left: 0;
+      padding: 0 0 20px;
       margin: 0;
       list-style: none;
       border-bottom: 2px solid #eee;
@@ -120,81 +121,77 @@
         clear: both;
       }
       > li {
-        margin-bottom: -1px;
         position: relative;
         display: inline-block;
         &.active {
           > a {
+            font-weight: 600;
             cursor: default;
-            border: none;
             color: $color-link;
             background: transparent;
-            &::after {
-              transform: scale(1);
-            }
           }
         }
         &:hover {
           cursor: pointer;
-          > a {
-            &::after {
-              transform: scale(1);
-            }
-          }
         }
         > a {
-          
           text-decoration: none;
           position: relative;
           display: block;
-          padding: 10px 15px;
-          margin-right: 2px;
+          padding: 0 15px;
           line-height: 1.42857143;
-          border-radius: 4px 4px 0 0;
           background-color: transparent;
-          border: none;
-          color: #666;
+          border: 1px solid $color-font;
+          border-width: 0 0 0 1px;
+          color: $color-link;
           font-weight: normal;
           &:hover {
-            border: none;
-            color: $color-link;
+            color: $color-link-hover;
             background: transparent;
             text-decoration: none;
           }
-          &::after {
-            content: "";
-            background: $color-link;
-            height: 2px;
-            position: absolute;
-            width: 100%;
-            left: 0px;
-            bottom: -1px;
-            transition: all 250ms ease 0s;
-            transform: scale(0);
+        }
+        &:first-child {
+          a {
+            padding-left: 0;
+            border-left-width: 0;
+          }
+        }
+        &:last-child {
+          a {
+            padding-right: 0;
           }
         }
       } 
     }
   }
 
-  // Component
+  // Component: Sidebar
   .side-nav {
     margin-bottom: 50px;
+    padding-right: 15px;
+    .bg-gray {
+      background-color: $color-gray;
+      padding: 30px 20px;
+    }
     ul {
+      padding-left: 15px;
       list-style: disc;
       color: $color-link;
-      padding-left: 15px;
       li {
         a {
+          text-decoration: none;
+          font-weight: 600;
           cursor: pointer;
         }
       }
     }
   }
 
-  // Component
+  // Component: Articles
   .articles {
     margin-bottom: 50px;
+    padding: 30px 0 0 30px;
     .article {
       margin-bottom: 50px;
       .anchor {
@@ -211,6 +208,18 @@
       }
       .intro {
         margin: 0 0 10px;
+        table {
+          margin: 20px 0;
+          border-collapse: collapse;
+          td {
+            padding: 10px 15px;
+            vertical-align: top;
+            border: 1px solid $color-gray;
+          }
+          ul,ol {
+            padding-left: 15px;
+          }
+        }
       }
       .content {
         overflow: hidden;
@@ -227,6 +236,8 @@
       }
       .more {
         a {
+          font-weight: 600;
+          text-decoration: underline;
           cursor: pointer;
         }
       }

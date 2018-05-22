@@ -9,12 +9,14 @@ class SideNav extends Component {
   render() {
     return (
       <div className="side-nav">
-        <h3>{this.props.currentCategory}</h3>
-        <ul>
-          {this.getTitles(this.props.currentCategory).map((data, index) => {
-            return (<li key={data.id}><a href={'#' + data.hash}>{data.title}</a></li>);
-          })}
-        </ul>
+        <div className="bg-gray">
+          <h3>{this.props.currentCategory}</h3>
+          <ul>
+            {this.getTitles(this.props.currentCategory).map((data, index) => {
+              return (<li key={data.id}><a href={'#' + data.hash}>{data.title}</a></li>);
+            })}
+          </ul>
+        </div>
       </div>
     );
   }
