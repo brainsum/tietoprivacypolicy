@@ -170,6 +170,9 @@
   .side-nav {
     margin-bottom: 50px;
     padding-right: 15px;
+    @include breakpoint-max(760px) {
+      padding-right: 0;
+    }
     .bg-gray {
       background-color: $color-gray;
       padding: 30px 20px;
@@ -192,6 +195,9 @@
   .articles {
     margin-bottom: 50px;
     padding: 30px 0 0 30px;
+    @include breakpoint-max(760px) {
+      padding-left: 0;
+    }
     .article {
       margin-bottom: 50px;
       .anchor {
