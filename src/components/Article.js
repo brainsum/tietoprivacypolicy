@@ -10,10 +10,6 @@ class Article extends Component {
     }
   }
 
-  componentDidUpdate() {
-    console.log('Updated Article');
-  }
-  
   render() {
     return (
       <div className="article">

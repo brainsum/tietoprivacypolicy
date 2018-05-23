@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import registerServiceWorker from './registerServiceWorker';
 import uuidv1 from 'uuid/v1';
 
 import TabbedNav from './components/TabbedNav';
@@ -33,10 +32,6 @@ class App extends Component {
     if (window.location.hash) {
       this.jumpToAnchor(window.location.hash.replace('#', ''))
     }
-  }
-
-  componentDidUpdate() {
-    console.log('Updated App')
   }
 
   render() {
@@ -111,4 +106,3 @@ function addUniqueId(content) {
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();

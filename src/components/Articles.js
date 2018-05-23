@@ -5,10 +5,6 @@ import Article from './Article';
 
 class Articles extends Component {
 
-  componentDidUpdate() {
-    console.log('Updated Articles');
-  }
-  
   render() {
     return (
       <div className="articles">

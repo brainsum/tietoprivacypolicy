@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 
 class TabbedNav extends Component {
 
-  componentDidUpdate() {
-    console.log('Updated TabbedNav')
-  }
-
   render() {
     return (
       <div className="tabbed-nav">

@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 
 class SideNav extends Component {
 
-  componentDidUpdate() {
-    console.log('Updated SideNav')
-  }
-
   render() {
     return (
       <div className="side-nav">
