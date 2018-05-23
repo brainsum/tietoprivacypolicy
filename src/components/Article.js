@@ -25,7 +25,7 @@ class Article extends Component {
             <div ref={this.contentRef} className={'content' + ((this.state.expanded) ? ' expanded' : '')} style={{height:'0px'}}>
               <div dangerouslySetInnerHTML={{__html: this.props.data.content}} />
             </div>
-            <div className="more"><a onClick={this.handleMoreOpen.bind(this)}>More</a></div>
+            <div className="more"><a onClick={this.handleMoreOpen.bind(this)}>Read more</a></div>
           </React.Fragment>
         }
       </div>
@@ -43,7 +43,7 @@ class Article extends Component {
     }
     
     // Changing link text
-    event.target.innerText =(event.target.innerText === 'More') ? 'Less' : 'More' ;
+    event.target.innerText =(event.target.innerText === 'Read more') ? 'Read less' : 'Read more' ;
   }
 }
 

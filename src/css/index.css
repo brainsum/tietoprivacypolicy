@@ -123,6 +123,8 @@
         text-decoration: none;
         font-weight: 600;
         cursor: pointer; }
+    .privacy-notice-app .side-nav .extra {
+      margin-top: 20px; }
   .privacy-notice-app .articles {
     margin-bottom: 50px;
     padding: 30px 0 0 30px; }

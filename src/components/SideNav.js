@@ -16,6 +16,11 @@ class SideNav extends Component {
               return (<li key={data.id}><a href={'#' + data.hash}>{data.title}</a></li>);
             })}
           </ul>
+          <div className="extra">
+            <ul>
+              <li><a href="https://www.tieto.com/cookie-notice" target="_blank" rel="noopener noreferrer">Cookie Policy</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     );
