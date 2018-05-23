@@ -2,7 +2,7 @@
   "name": "tieto-privacy-react",
   "version": "1.0.0",
   "private": true,
-  "homepage": "http://tietoprivacypolicy.gubo.brainsum.com/react-app/demo/insite",
+  "homepage": "https://www.tieto.com/privacy-notice",
   "dependencies": {
     "node-sass-chokidar": "^1.3.0",
     "react": "^16.3.2",
