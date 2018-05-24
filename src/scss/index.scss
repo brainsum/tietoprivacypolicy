@@ -193,11 +193,7 @@
       margin-top: 20px;
     }
   }
-  &.cookie-policy .side-nav {
-    display:none;
-    .extra {
-    }
-  }
+
 
   // Component: Articles
   .articles {
@@ -220,6 +216,10 @@
       p {
         margin: 0 0 10px;
       }
+      ul {
+        margin: 15px 0 15px;
+        padding: 0 0 0 30px;
+      }
       .intro {
         margin: 0 0 10px;
         table {
@@ -238,14 +238,9 @@
       .content {
         overflow: hidden;
         transition: height .25s ease-out;
-        background-color: #FAFAFA;
         will-change: height;
         &.expanded {
           margin: 0 0 10px;
-        }
-        > div {
-          padding: 20px 40px;
-          
         }
       }
       .more {

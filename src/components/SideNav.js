@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 class SideNav extends Component {
 
   render() {
+    console.log(this.props.currentCategory);
     return (
       <div className="side-nav">
         <div className="bg-gray">
@@ -12,11 +13,13 @@ class SideNav extends Component {
               return (<li key={data.id}><a href={'#' + data.hash}>{data.title}</a></li>);
             })}
           </ul>
-          <div className="extra">
-            <ul>
-              <li><a href="https://www.tieto.com/cookie-notice" target="_blank" rel="noopener noreferrer">Cookie Policy</a></li>
-            </ul>
-          </div>
+          {(this.props.currentCategory === "Website Visitor notice") && 
+            <div className="extra">
+              <ul>
+                <li><a href="https://www.tieto.com/cookie-notice" target="_blank" rel="noopener noreferrer">Cookie notice</a></li>
+              </ul>
+            </div>
+          }
         </div>
       </div>
     );
