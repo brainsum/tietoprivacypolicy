@@ -193,6 +193,11 @@
       margin-top: 20px;
     }
   }
+  &.cookie-policy .side-nav {
+    display:none;
+    .extra {
+    }
+  }
 
   // Component: Articles
   .articles {

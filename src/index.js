@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import uuidv1 from 'uuid/v1';
+import slugify from 'slugify';
 
 import TabbedNav from './components/TabbedNav';
 import SideNav from './components/SideNav';
@@ -35,8 +36,11 @@ class App extends Component {
   }
 
   render() {
+    let rootClass = ["privacy-notice-app"];
+    rootClass.push(slugify(this.state.currentCategory, {lower:true}));
+
     return (
-      <div className="privacy-notice-app">
+      <div className={rootClass.join(" ")}>
         <h1>Privacy notice</h1>
         <TabbedNav categories={this.state.categories}
           currentCategory={this.state.currentCategory}
